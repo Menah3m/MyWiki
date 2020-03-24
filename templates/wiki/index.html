@@ -1,0 +1,10 @@
+{% extends "wiki/base.html" %}
+
+{% block content %}
+    <ul>
+        {% for category in categories %}
+        <li>{{ category }}</li>
+        {% endfor %}
+    </ul>
+
+{% endblock content %}
