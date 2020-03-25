@@ -1,10 +1,10 @@
-{% extends "base.html" %}
+{% include "base.html" %}
 
-{% block content %}
-    <ul>
-        {% for category in categories %}
-        <li><a href="{% url 'wiki:items' category.id %}">{{ category }}</a></li>
-        {% endfor %}
-    </ul>
 
-{% endblock content %}
+       {% block content %}
+         <ul>
+            {% for category in categories %}
+            <li><a href="{% url 'wiki:items' category.id %}">{{ category }}</a></li>
+            {% endfor %}
+         </ul>
+       {% endblock content %}
