@@ -6,6 +6,6 @@ app_name = 'wiki'
 
 urlpatterns = [
     path('', views.categories, name='index'),
-    path('<int:id>', views.items, name='items'),
-    path('<int:category_id>/<int:item_id>', views.item_detail, name='item_detail')
+    path('<slug:category_slug>', views.items, name='items'),
+    path('<slug:category_slug>/<slug:item_slug>', views.item_detail, name='item_detail')
 ]

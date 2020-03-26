@@ -4,7 +4,7 @@
        {% block content %}
          <ul>
             {% for category in categories %}
-            <li><a href="{% url 'wiki:items' category.id %}">{{ category }}</a></li>
+            <li><a href="{% url 'wiki:items' category.category_slug %}">{{ category }}</a></li>
             {% endfor %}
          </ul>
        {% endblock content %}
