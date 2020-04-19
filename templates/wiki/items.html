@@ -1,9 +1,0 @@
-{% include "base.html" %}
-
-
- <ul>
-     {%  for item in items %}
-         <li><a href="{% url 'wiki:item_detail' category.category_slug item.item_slug %}"> {{ item }} </a></li>
-
-     {% endfor %}
- </ul>
